@@ -1,9 +1,10 @@
-export class User {
+export class Repository {
     name:string;
-    page:string;
+    html_url:string;
     description?:string;
     issues:number;
-    openIssues:number;
+    open_issues:number;
     forks:number;
+    login:string;
 
 }

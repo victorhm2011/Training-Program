@@ -9,10 +9,13 @@ import { Observable } from 'rxjs';
 export class UserService {
 
   usersUrl:string = "https://api.github.com/users";
+  limitUrl:string = "?per_page=12";
+  pageNumberUrl:string = "&page=1";
+
 
   constructor(private http:HttpClient) { }
 
   getUsers():Observable<User[]>{
-    return this.http.get<User[]>(this.usersUrl);
+    return this.http.get<User[]>(this.usersUrl+this.limitUrl);
   }
 }

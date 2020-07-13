@@ -1,1 +1,11 @@
-<p>repositories works!</p>
+<div>
+    <div class="album">
+        <div class="row">
+            <app-repository-item
+                *ngFor="let repository of repositories"
+                [repositoryInput]="repository" 
+
+            ></app-repository-item>
+        </div>
+    </div>
+</div>
