@@ -3,11 +3,16 @@
     <div class="album">
         <div class="row">
             <app-user-item
-                *ngFor="let user of users"
+                *ngFor="let user of users | paginate: { itemsPerPage: 12, currentPage: page }"
                 [userInput]="user" 
 
             ></app-user-item>
         </div>
         
     </div>
+    <pagination-controls 
+        (pageChange)="page = $event"
+        previousLabel="Previous"
+        nextLabel="Next">
+    </pagination-controls>
 </div>

@@ -15,7 +15,7 @@ const httpOptions = {
 export class UserService {
 
   usersUrl:string = "https://api.github.com/users?page=";
-  limitUrl:string = "&per_page=32";
+  limitUrl:string = "&per_page=300";
   pageNumberUrl:number = 3;
 
 

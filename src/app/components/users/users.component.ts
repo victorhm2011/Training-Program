@@ -10,6 +10,7 @@ import { UserService } from 'src/app/services/user.service';
 export class UsersComponent implements OnInit {
 
   users:User[]
+  public page:number;
 
   constructor(private userService: UserService) { }
 
