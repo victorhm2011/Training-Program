@@ -8,6 +8,7 @@ import { UserItemComponent } from './components/user-item/user-item.component';
 import { RepositoriesComponent } from './components/repositories/repositories.component';
 import { RepositoryItemComponent } from './components/repository-item/repository-item.component';
 import { HeaderComponent } from './components/layout/header/header.component';
+import { AboutComponent } from './components/pages/about/about.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HeaderComponent } from './components/layout/header/header.component';
     UserItemComponent,
     RepositoriesComponent,
     RepositoryItemComponent,
-    HeaderComponent
+    HeaderComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
