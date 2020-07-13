@@ -2,17 +2,38 @@
     background-color: rgb(83, 201, 236);
     border: #250858 2px solid;
     border-radius: 25px;
-    max-width: 340px ;
+    max-width: 320px ;
     padding: 0px;
     margin: 30px;
+    text-align:center;
 }
 
 .imgUser{
     height: 180px;
     width: 280px;
-    margin-left: 28px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
     transition: all 0.8s; 
     
     z-index: -900;
     
+}
+
+.card{
+
+    background-color: #45A29E;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border: 2px solid #1F2833;
+    border-radius: .25rem;
+    max-height: 450px;
+    min-width: 210px;
+    margin-top: 9px;
+    margin-left: 9px;
+    margin-right: 9px;
+ 
 }

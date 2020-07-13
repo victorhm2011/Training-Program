@@ -23,7 +23,7 @@ export class UserItemComponent implements OnInit {
   }
 
   onRepositories(){
-    console.log("repositories");
+    //this.router.navigateByUrl(`${this.userInput.repositories}`);
   }
 
 }

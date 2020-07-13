@@ -25,6 +25,30 @@ export class UsersComponent implements OnInit {
         name:"mojombo",
         page:"https://github.com/mojombo",
         repositories:"https://api.github.com/users/mojombo/repos"
+      },
+      {
+        avatar:"https://avatars0.githubusercontent.com/u/1?v=4",
+        name:"mojombo",
+        page:"https://github.com/mojombo",
+        repositories:"https://api.github.com/users/mojombo/repos"
+      },
+      {
+        avatar:"https://avatars0.githubusercontent.com/u/1?v=4",
+        name:"mojombo",
+        page:"https://github.com/mojombo",
+        repositories:"https://api.github.com/users/mojombo/repos"
+      },
+      {
+        avatar:"https://avatars0.githubusercontent.com/u/1?v=4",
+        name:"mojombo",
+        page:"https://github.com/mojombo",
+        repositories:"https://api.github.com/users/mojombo/repos"
+      },
+      {
+        avatar:"https://avatars0.githubusercontent.com/u/1?v=4",
+        name:"mojombo",
+        page:"https://github.com/mojombo",
+        repositories:"https://api.github.com/users/mojombo/repos"
       }
     ]
   }

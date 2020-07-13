@@ -1,9 +1,11 @@
 <div>
-    
-    <app-user-item
-        *ngFor="let user of users"
-        [userInput]="user" 
+    <div class="album">
+        <div class="row">
+            <app-user-item
+                *ngFor="let user of users"
+                [userInput]="user" 
 
-    ></app-user-item>
-   
+            ></app-user-item>
+        </div>
+    </div>
 </div>

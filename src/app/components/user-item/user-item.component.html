@@ -1,11 +1,14 @@
 <div [ngClass] = "setClasses()" class="col-3">
-    <div class="col-3">
-        <img class="imgUser" src="{{userInput.avatar}}" alt="">
-        <br>{{userInput.name}}
-        <br>
-        <a href="{{userInput.page}}" target="_blank"><input type="button" value="Visit {{userInput.name}}'s page on GitHub"></a>
-        <button (click)="onRepositories()"  class="col-12" >{{userInput.repositories}}</button>
-
+    <div class="col-xs-3">
+        <div class="mb-3 justify-content-center">
+            <div class="pb-0 justify-content-center">
+                <img class="imgUser" src="{{userInput.avatar}}" alt="">
+                <br><h2>{{userInput.name}}</h2>
+                <br><a href="{{userInput.page}}" target="_blank"><input type="button"  class="col-12" value="Visit {{userInput.name}}'s page on GitHub"></a>
+                <br>
+                <br><button (click)="onRepositories()"  class="col-12" >{{userInput.repositories}}</button>
+            </div>
+        </div>
     </div>
 </div>
 
