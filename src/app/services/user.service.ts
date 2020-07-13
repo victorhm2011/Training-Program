@@ -25,8 +25,5 @@ export class UserService {
     return this.http.get<User[]>(this.usersUrl+this.pageNumberUrl+this.limitUrl);
   }
 
-  /*
-  updateUsers(todo:Todo):Observable<Todo[]>{
-    return this.http.put(this.todosUrl+`/${todo.id}`, todo, httpOptions);
-  }*/
+  
 }
