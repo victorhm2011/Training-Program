@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { User } from 'src/app/models/User';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-users',
@@ -10,47 +11,12 @@ export class UsersComponent implements OnInit {
 
   users:User[]
 
-  constructor() { }
+  constructor(private userService: UserService) { }
 
   ngOnInit(): void {
-    this.users=[
-      {
-        avatar:"https://avatars0.githubusercontent.com/u/1?v=4",
-        name:"mojombo",
-        page:"https://github.com/mojombo",
-        repositories:"https://api.github.com/users/mojombo/repos"
-      },
-      {
-        avatar:"https://avatars0.githubusercontent.com/u/1?v=4",
-        name:"mojombo",
-        page:"https://github.com/mojombo",
-        repositories:"https://api.github.com/users/mojombo/repos"
-      },
-      {
-        avatar:"https://avatars0.githubusercontent.com/u/1?v=4",
-        name:"mojombo",
-        page:"https://github.com/mojombo",
-        repositories:"https://api.github.com/users/mojombo/repos"
-      },
-      {
-        avatar:"https://avatars0.githubusercontent.com/u/1?v=4",
-        name:"mojombo",
-        page:"https://github.com/mojombo",
-        repositories:"https://api.github.com/users/mojombo/repos"
-      },
-      {
-        avatar:"https://avatars0.githubusercontent.com/u/1?v=4",
-        name:"mojombo",
-        page:"https://github.com/mojombo",
-        repositories:"https://api.github.com/users/mojombo/repos"
-      },
-      {
-        avatar:"https://avatars0.githubusercontent.com/u/1?v=4",
-        name:"mojombo",
-        page:"https://github.com/mojombo",
-        repositories:"https://api.github.com/users/mojombo/repos"
-      }
-    ]
+    this.userService.getUsers().subscribe( users => {
+      this.users = users;
+    });
   }
 
 }
