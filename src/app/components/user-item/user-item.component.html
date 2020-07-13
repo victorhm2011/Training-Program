@@ -1,1 +1,15 @@
-<p>user-item works!</p>
+<div [ngClass] = "setClasses()" class="col-3">
+    <div class="col-3">
+        <img class="imgUser" src="{{userInput.avatar}}" alt="">
+        <br>{{userInput.name}}
+        <br>
+        <a href="{{userInput.page}}" target="_blank"><input type="button" value="Visit {{userInput.name}}'s page on GitHub"></a>
+        <button (click)="onRepositories()"  class="col-12" >{{userInput.repositories}}</button>
+
+    </div>
+    
+    
+
+</div>
+
+

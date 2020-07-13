@@ -1,0 +1,18 @@
+.userContainer{
+    background-color: rgb(83, 201, 236);
+    border: #250858 2px solid;
+    border-radius: 25px;
+    max-width: 340px ;
+    padding: 0px;
+    margin: 30px;
+}
+
+.imgUser{
+    height: 180px;
+    width: 280px;
+    margin-left: 28px;
+    transition: all 0.8s; 
+    
+    z-index: -900;
+    
+}

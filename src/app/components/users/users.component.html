@@ -1,5 +1,9 @@
 <div>
-    <ul>
-        <li *ngFor="let user of users" >{{user.avatar}} - {{user.name}} - {{user.page}} - {{user.avatar}} - {{user.repositories}}</li>
-    </ul>
+    
+    <app-user-item
+        *ngFor="let user of users"
+        [userInput]="user" 
+
+    ></app-user-item>
+   
 </div>

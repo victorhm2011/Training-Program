@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { User } from 'src/app/models/User';
 
 @Component({
   selector: 'app-user-item',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserItemComponent implements OnInit {
 
+  @Input() userInput: User;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  setClasses(){
+    let clases = {
+      userContainer: true,
+    }
+    return clases;
+  }
+
+  onRepositories(){
+    console.log("repositories");
   }
 
 }
