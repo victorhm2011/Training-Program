@@ -14,15 +14,14 @@ const httpOptions = {
 })
 export class UserService {
 
-  usersUrl:string = "https://api.github.com/users?page=";
-  limitUrl:string = "&per_page=300";
-  pageNumberUrl:number = 3;
+  usersUrl:string = "https://api.github.com/users";
+  limitUrl:string = "?per_page=300";
 
 
   constructor(private http:HttpClient) { }
 
   getUsers():Observable<User[]>{
-    return this.http.get<User[]>(this.usersUrl+this.pageNumberUrl+this.limitUrl);
+    return this.http.get<User[]>(this.usersUrl+this.limitUrl);
   }
 
   

@@ -10,6 +10,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class RepositoriesComponent implements OnInit {
 
+  public page:number;
+
   repositories:Repository[]
 
   constructor(private repositoryService: RepositoryService, private route: ActivatedRoute,

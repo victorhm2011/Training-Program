@@ -15,13 +15,12 @@ const httpOptions = {
 export class RepositoryService {
 
   usersUrl:string = "https://api.github.com/users";
-  limitUrl:string = "&per_page=32";
-  pageNumberUrl:number = 1;
+  limitUrl:string = "?per_page=300";
 
   constructor(private http:HttpClient) { }
 
   getRepositories(userLogin:string):Observable<Repository[]>{
-    return this.http.get<Repository[]>( this.usersUrl + `/${userLogin}` + `/repos?page=`+this.pageNumberUrl+this.limitUrl);
+    return this.http.get<Repository[]>( this.usersUrl + `/${userLogin}` + `/repos?page=`+this.limitUrl);
    
   }
 }
