@@ -1,0 +1,10 @@
+.repositoryContainer{
+    background-color: rgb(83, 201, 236);
+    border: #250858 2px solid;
+    border-radius: 25px;
+    max-width: 320px ;
+    width: 320px;
+    padding: 0px;
+    margin: 30px;
+    text-align:center;
+}

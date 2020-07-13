@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Repository } from 'src/app/models/Repository';
+import { RepositoryService } from 'src/app/services/repository.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-repository-item',
@@ -10,9 +12,17 @@ export class RepositoryItemComponent implements OnInit {
 
   @Input() repositoryInput: Repository;
 
-  constructor() { }
+  constructor(private repositoryService: RepositoryService,private route: ActivatedRoute,
+    private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  setClasses(){
+    let clases = {
+      repositoryContainer: true,
+    }
+    return clases;
   }
 
 }

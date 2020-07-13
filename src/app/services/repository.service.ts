@@ -16,7 +16,7 @@ export class RepositoryService {
 
   usersUrl:string = "https://api.github.com/users";
   limitUrl:string = "&per_page=32";
-  pageNumberUrl:number = 3;
+  pageNumberUrl:number = 1;
 
   constructor(private http:HttpClient) { }
 
