@@ -12,6 +12,7 @@ export class RepositoryItemComponent implements OnInit {
 
   @Input() repositoryInput: Repository;
 
+
   constructor(private repositoryService: RepositoryService,private route: ActivatedRoute,
     private router: Router) { }
 
