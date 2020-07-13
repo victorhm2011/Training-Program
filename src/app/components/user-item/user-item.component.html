@@ -3,10 +3,10 @@
         <div class="mb-3 justify-content-center">
             <div class="pb-0 justify-content-center">
                 <img class="imgUser" src="{{userInput.avatar_url}}" alt="">
-                <br><h2>{{userInput.login}}</h2>
-                <br><a href="{{userInput.html_url}}" target="_blank"><input type="button"  class="col-12" value="Visit {{userInput.login}}'s page on GitHub"></a>
+                <br><h2 class="name">{{userInput.login}}</h2>
+                <br><a href="{{userInput.html_url}}" target="_blank"><input type="button"  class="col-12 btn-secondary" value="Visit {{userInput.login}}'s page on GitHub"></a>
                 <br>
-                <br><button (click)="onRepositories()"  class="col-12" >View {{userInput.login}}'s repositories"</button>
+                <br><button (click)="onRepositories()"  class="col-12 btn-primary" >View repositories</button>
             </div>
         </div>
     </div>

@@ -1,6 +1,6 @@
 .userContainer{
-    background-color: rgb(83, 201, 236);
-    border: #250858 2px solid;
+    background-color:  #333;
+    border: #000000 2px solid;
     border-radius: 25px;
     max-width: 320px ;
     padding: 0px;
@@ -20,20 +20,8 @@
     
 }
 
-.card{
-
-    background-color: #45A29E;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    word-wrap: break-word;
-    background-clip: border-box;
-    border: 2px solid #1F2833;
-    border-radius: .25rem;
-    max-height: 450px;
-    min-width: 210px;
-    margin-top: 9px;
-    margin-left: 9px;
-    margin-right: 9px;
- 
+.name{
+    margin-top: 20px;
+    color:rgb(255, 255, 255) ;
 }
+

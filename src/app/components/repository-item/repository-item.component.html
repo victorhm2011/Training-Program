@@ -4,18 +4,18 @@
             <div class="pb-0 justify-content-center">
                 <br><h2>{{repositoryInput.name}}</h2>
                 <p>{{repositoryInput.description}}</p>
-                <br><a href="{{repositoryInput.html_url}}" target="_blank"><input type="button"  class="col-12" value="Visit repository page on GitHub"></a>
+                <a href="{{repositoryInput.html_url}}" target="_blank"><input type="button"  class="col-12 btn-primary" value="Visit repository page on GitHub"></a>
                 <div class="row">
-                    <div class="col-md-4">
-                        <p>Forks</p>
+                    <div class="col-md-4 ">
+                        <p class="numbers">Forks</p>
                         {{repositoryInput.forks}}
                     </div>
                     <div class="col-md-4">
-                        <p>Open issues</p>
+                        <p class="numbers">Open issues</p>
                         {{repositoryInput.open_issues}}
                     </div>
                     <div class="col-md-4">
-                        <p>Watchers</p>
+                        <p class="numbers">Watchers</p>
                         {{repositoryInput.watchers}}
                     </div>
                 </div>
