@@ -5,6 +5,5 @@ export class Repository {
     watchers:number;
     open_issues:number;
     forks:number;
-    login:string;
 
 }
